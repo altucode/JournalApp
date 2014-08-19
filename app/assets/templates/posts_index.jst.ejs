@@ -1,0 +1,11 @@
+<ul class="posts-list">
+  <% for (var i = 0; i < posts.length; i++) { %>
+    <li id="post-<%= posts.at(i).get('id') %>" class="post">
+      <h3> <%= posts.at(i).get('title') %> </h3>
+      <p class="post-body"> <%= posts.at(i).get('body') %> </p>
+      <button class="delete-post" data-id="<%= posts.at(i).get('id') %>">
+        Delete Post
+      </button>
+    </li>
+  <% }; %>
+</ul>

@@ -1,0 +1,11 @@
+<div class="post-title editable">
+  <label class="display"> <%= post.escape("title") %> </label>
+  <input class="edit" value="<%= post.escape('title') %>">
+</div>
+<div class="post-body editable">
+  <p class="display"> <%= post.escape("body") %> </p>
+  <textarea class="edit"> <%= post.escape("body") %> </textarea>
+</div>
+<a href="#/">Index</a>
+
+
